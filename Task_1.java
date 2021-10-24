@@ -1,0 +1,33 @@
+//1. В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К. 
+  
+package task_1;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task_1 {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Количество элементов массива = ");
+        int n = input.nextInt();
+        System.out.print("K = ");
+        int K = input.nextInt();
+        
+        int[] myArray = new int[n];
+        int sum = 0; //Сумма элементов кратных K
+        
+        //Создаём массив
+        for (int i = 0; i < n; i++)
+            myArray[i] = (int) (Math.random() * 9 + 1);
+        
+        for (int i = 0; i < n; i++)
+            if (myArray[i] % K == 0) sum += myArray[i];
+            
+        System.out.println(Arrays.toString(myArray));
+        System.out.println("Сумма элементов кратных K = " + sum);
+      
+    }
+    
+}
