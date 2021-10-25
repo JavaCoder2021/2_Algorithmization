@@ -10,15 +10,15 @@ public class Task_1 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
-        System.out.print("Количество элементов массива = ");
+        System.out.print("Amount of elements = ");
         int n = input.nextInt();
         System.out.print("K = ");
         int K = input.nextInt();
         
         int[] myArray = new int[n];
-        int sum = 0; //Сумма элементов кратных K
+        int sum = 0; //Sum of elements multiples of K
         
-        //Создаём массив
+        //Create an array
         for (int i = 0; i < n; i++)
             myArray[i] = (int) (Math.random() * 9 + 1);
         
@@ -26,7 +26,7 @@ public class Task_1 {
             if (myArray[i] % K == 0) sum += myArray[i];
             
         System.out.println(Arrays.toString(myArray));
-        System.out.println("Сумма элементов кратных K = " + sum);
+        System.out.println("Sum of elements multiples of K = " + sum);
       
     }
     
