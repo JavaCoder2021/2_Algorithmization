@@ -39,8 +39,10 @@ public class Task_7 {
         //Calculations
         for (int i = 0; i < n/2; i++)
         {
-            if (i == 0 ) max = myArray[i] + myArray[n - 1 - i];
-            else if ((myArray[i] + myArray[n - 1 - i]) > max) max = myArray[i] + myArray[n - 1 - i];
+            if (i == 0 ) 
+                max = myArray[i] + myArray[n - 1 - i];
+            else if ((myArray[i] + myArray[n - 1 - i]) > max) 
+                max = myArray[i] + myArray[n - 1 - i];
         }           
                 
         System.out.printf("max = %.3f \n", max);
