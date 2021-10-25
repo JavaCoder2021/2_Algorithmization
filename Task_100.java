@@ -36,7 +36,7 @@ public class Task_100 {
         {
             for (int a = 0; a < n; a++)
             {
-                if (a % 2 ==0)
+                if (a % 2 == 0)
                 {
                     if (myArray[0][a] > myArray[n-1][a])
                         System.out.print(myArray[i][a] + "\t");
