@@ -11,7 +11,7 @@ public class Task_3 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
-        System.out.print("Количество элементов массива = ");
+        System.out.print("Amount of elements = ");
         int N = input.nextInt();
         
         double[] myArray = new double[N];
@@ -19,13 +19,14 @@ public class Task_3 {
         int Zero = 0;
         int Negative = 0;
         
-        //Создаём массив
+        //Create an array
+        System.out.println("Array:");
         for (int i = 0; i < N; i++)
         {
             myArray[i] = (double) (Math.random() * 20) - 10;
-            if (i < N-1) System.out.printf(" %.1f  ", myArray[i]);
-            else System.out.printf(" %.1f\n", myArray[i]);
+            System.out.printf(" %.1f  ", myArray[i]);
         }
+        System.out.println("");
         
         for (int i = 0; i < N; i++)
         {
@@ -34,9 +35,9 @@ public class Task_3 {
             else Negative++;
         }
             
-        System.out.println("Положительные числа = " + Positive);
-        System.out.println("Ноль = " + Zero);  
-        System.out.println("Отрицательные числа = " + Negative);
+        System.out.println("Positive = " + Positive);
+        System.out.println("Zero = " + Zero);  
+        System.out.println("Negative = " + Negative);
         
     }
     
