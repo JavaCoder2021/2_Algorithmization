@@ -1,12 +1,12 @@
 //1. Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего. 
 
-package task_100;
+package task_101;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
-public class Task_100 {
+public class Task_101 {
 
     public static void main(String[] args) {
         
