@@ -17,6 +17,7 @@ public class Task8 {
         
         Random random = new Random();
         int[] myArray = new int[n];
+        int min = 0;
  
         //Create an array
         System.out.println("Array:");
@@ -24,19 +25,13 @@ public class Task8 {
         {
             myArray[i] = random.nextInt(20) - 10;
             System.out.printf(" %d  ", myArray[i]);
-        }
-        System.out.println("");
-        
-        //Calculations
-        int min = 0;
-        for (int i = 0; i < myArray.length; i++)
-        {
+            //Calculations
             if (i == 0 ) 
                 min = myArray[i];
             else if (myArray[i] < min)
                 min = myArray[i];
         }
-        System.out.println("min = " + min);
+        System.out.println("\n min = " + min);
         
         //Output
         System.out.println("Output array:");
