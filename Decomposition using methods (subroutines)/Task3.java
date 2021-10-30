@@ -4,7 +4,6 @@
 package task3;
 
 import java.util.Scanner;
-import java.util.Random;
 
 public class Task3 {
       
@@ -21,8 +20,6 @@ public class Task3 {
             System.out.print("a = ");
             a = input.nextDouble();
         }
-        
-        Random random = new Random();
         
         //Calculations
         double area = hexagonArea(a);
