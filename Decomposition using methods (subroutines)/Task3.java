@@ -33,7 +33,9 @@ public class Task3 {
     }
     
     public static double hexagonArea(double a) {
+        
         return (6 * (a * a))/(4 * Math.tan(Math.PI / 6));
+        
     }
     
 }
