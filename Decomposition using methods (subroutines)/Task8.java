@@ -19,7 +19,7 @@ public class Task8 {
         int n;
         System.out.print("Amount of elements = ");
         n = input.nextInt();
-        while (n <= 0 || n <=6 )
+        while (n <=6)
         {
             System.out.print("Amount of elements = ");
             n = input.nextInt();
