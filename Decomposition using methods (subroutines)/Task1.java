@@ -39,17 +39,19 @@ public class Task1 {
         
     }
     
-    private static long nod(long a, long b)
-    {
+    private static long nod(long a, long b) {
+        
         if (b == 0)
             return a;
         else
             return nod(b, a % b);
+        
     }
     
-    private static long nok(long a, long b)
-    {
+    private static long nok(long a, long b) {
+        
         return a * (b / nod(a, b));
+        
     }
     
 }
