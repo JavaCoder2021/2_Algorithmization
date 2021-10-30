@@ -61,7 +61,7 @@ public class Task5 {
         
         //Found max2
         for (int i = 0; i < n; i++)
-            if (A[i] > max2 && A[i] != max)
+            if (A[i] > max2 && A[i] < max)
                 max2 = A[i];
         
         return max2;
