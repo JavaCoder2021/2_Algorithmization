@@ -22,16 +22,16 @@ public class Task3 {
         }
         
         //Calculations
-        double area = hexagonArea(a);
+        double area = 6 * triangleArea(a);
             
         //Output
         System.out.printf("area = %.2f \n", area);
 
     }
     
-    public static double hexagonArea(double a) {
+    public static double triangleArea(double a) {
         
-        return (6 * (a * a))/(4 * Math.tan(Math.PI / 6));
+        return ( (a * a * Math.sqrt(3)) / 4 );
         
     }
     
