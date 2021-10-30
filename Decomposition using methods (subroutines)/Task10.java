@@ -45,8 +45,8 @@ public class Task10 {
         
         while(number > 0)
         {
-            A[j--] = number %10;
-            number/= 10;
+            A[j--] = number % 10;
+            number /= 10;
         }
         
         return A;
