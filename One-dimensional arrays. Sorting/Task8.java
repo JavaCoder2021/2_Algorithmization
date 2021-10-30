@@ -87,8 +87,8 @@ public class Task8 {
 
     }
     
-    public static class Drob 
-    {
+    public static class Drob {
+        
         public int p;
         public int q;
         
