@@ -25,7 +25,7 @@ public class Task3 {
         double area = 6 * triangleArea(a);
             
         //Output
-        System.out.printf("area = %.2f \n", area);
+        System.out.printf("area = %.3f \n", area);
 
     }
     
