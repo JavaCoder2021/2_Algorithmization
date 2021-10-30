@@ -29,7 +29,7 @@ public class Task15 {
             long[] A = arrayNumber(i);
             grow = true;
             for(a = 1; a < A.length; a++)
-                if (A[a - 1] + 1 != A[a])
+                if (A[a - 1] >= A[a])
                     grow = false;
             if (grow == true)
                 System.out.printf("  %d  ", i);
