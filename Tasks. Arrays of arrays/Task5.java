@@ -2,7 +2,6 @@
 
 package task5;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task5 {
