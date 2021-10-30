@@ -12,12 +12,12 @@ public class Task4 {
         //Input
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter an even number of items: ");
+        System.out.print("Enter number of items: ");
         int n;
         n = input.nextInt();
-        while (n % 2 != 0)
+        while (n <= 0)
         {
-            System.out.print("Enter an even number of items: ");
+            System.out.print("Enter number of items: ");
             n = input.nextInt();
         }
         
