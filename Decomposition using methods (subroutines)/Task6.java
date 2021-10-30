@@ -54,10 +54,4 @@ public class Task6 {
         
     }
     
-    private static long nod3(long a, long b, long c) {
-            
-        return nod(a, nod(b, c));
-        
-    }
-    
 }
