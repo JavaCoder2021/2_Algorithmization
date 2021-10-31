@@ -74,7 +74,7 @@ public class Task13 {
         
     }
     
-    //Calculations
+    //output
     public static void output(String s) {
         
         System.out.println(s);
