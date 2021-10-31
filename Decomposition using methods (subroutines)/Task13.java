@@ -10,29 +10,33 @@ public class Task13 {
 
     public static void main(String[] args) {
         
+        int n = inputN();
+        
+        String s = calculations(n);
+        
+        output(s);        
+        
+    }
+    
+    //Input
+    public static int inputN() {
+     
         //Input
-        Scanner input = new Scanner(System.in);
-
         int n;
+        Scanner input = new Scanner(System.in);
         System.out.print("n = ");
         n = input.nextInt();
-        while (n <= 0)
+        while (n <= 2)
         {
             System.out.print("n = ");
             n = input.nextInt();
         }
         
-        for(int i = n; i < n * 2 - 1; i++)
-        {
-            if(simple(i) && simple(i+2))
-            {
-                System.out.printf("  %d and %d  ", i, i+2);
-            }
-        }       
-        System.out.println();
+        return n;
         
     }
     
+    //Prime number
     public static boolean simple(int num) {
         
         if (num <= 1)
@@ -50,6 +54,30 @@ public class Task13 {
             } 
             return true;
         }
+        
+    }
+    
+    //Calculations
+    public static String calculations(int n) {
+        
+        String s = "";
+        
+        for(int i = n; i < n * 2 - 1; i++)
+        {
+            if(simple(i) && simple(i+2))
+            {
+                s += "  " + i + " and " + (i + 2) + "  ";
+            }
+        }   
+        
+        return s;
+        
+    }
+    
+    //Calculations
+    public static void output(String s) {
+        
+        System.out.println(s);
         
     }
     
