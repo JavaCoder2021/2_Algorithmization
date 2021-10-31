@@ -10,34 +10,31 @@ public class Task15 {
 
     public static void main(String[] args) {
         
-        //Input
+        int n = inputN();
+        
+        String s = calculations(n);
+        
+        output(s);
+        
+    }
+    
+    //Input
+    public static int inputN() {
+     
         Scanner input = new Scanner(System.in);
- 
-        int n;
         System.out.print("n = ");
-        n = input.nextInt();
+        int n = input.nextInt();
         while (n <= 0)
         {
             System.out.print("n = ");
             n = input.nextInt();
         }
-         
-        int i, a;
-        boolean grow;
-        for (i = 10; i <= (int) Math.pow(10, n) - 1; i++)
-        {
-            long[] A = arrayNumber(i);
-            grow = true;
-            for(a = 1; a < A.length; a++)
-                if (A[a - 1] >= A[a])
-                    grow = false;
-            if (grow == true)
-                System.out.printf("  %d  ", i);
-        }
-        System.out.println();
+        
+        return n;
         
     }
     
+    //Get the digits of a number
     public static long[] arrayNumber(int n) {
         
         int count = 0;
@@ -59,6 +56,36 @@ public class Task15 {
         }
         
         return A;
+        
+    }
+    
+    //Calculations
+    public static String calculations(int n) {
+        
+        String s = "";
+        
+        int i, a;
+        boolean grow;
+        for (i = 10; i <= (int) Math.pow(10, n) - 1; i++)
+        {
+            long[] A = arrayNumber(i);
+            grow = true;
+            for(a = 1; a < A.length; a++)
+                if (A[a - 1] >= A[a])
+                    grow = false;
+            if (grow == true)
+                s += "  " + i + "  ";
+        }
+        System.out.println();
+        
+        return s;
+        
+    }
+    
+    //Output
+    public static void output(String s) {
+        
+        System.out.println(s);
         
     }
     
