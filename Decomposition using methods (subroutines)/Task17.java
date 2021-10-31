@@ -9,45 +9,64 @@ public class Task17 {
 
     public static void main(String[] args) {
         
-        //Input
+        int number = inputN();
+                
+        int count = countNumber(number);
+        
+        output(count);      
+        
+    }
+    
+    //Input
+    public static int inputN() {
+     
         Scanner input = new Scanner(System.in);
- 
-        int number;
         System.out.print("number = ");
-        number = input.nextInt();
+        int number = input.nextInt();
         while (number <= 0)
         {
             System.out.print("number = ");
             number = input.nextInt();
         }
-         
-        int count = countNumber(number);
         
-        System.out.println("count = " + count);         
+        return number;
         
     }
     
+    //Get sum Numbers
+    public static int getSumNumber(int number) {
+        
+        int sum = 0;
+        while(number > 0)
+        {
+            sum += number % 10;
+            number /= 10;
+        }
+        
+        return sum;
+        
+    }
+    
+    //Calculations
     public static int countNumber(int number) {
         
         int count = 0;
-        int sum = 0;
-        int tmp;
         
         while (number != 0)
         {
-            sum = 0;
-            tmp = number;
-            while(tmp > 0)
-            {
-                sum += tmp % 10;
-                tmp /= 10;
-            }
-            number -= sum;  
+            number -= getSumNumber(number);
             count++;
             System.out.println(number);    
         }
          
         return count;
+        
+    }
+    
+    //Output
+    public static void output(int count) {
+        
+        System.out.println("count = " + count);
         
     }
     
