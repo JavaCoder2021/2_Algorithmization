@@ -14,18 +14,16 @@ public class Task13 {
         
         String s = calculations(n);
         
-        output(s);        
+        output(s);
         
     }
     
     //Input
     public static int inputN() {
      
-        //Input
-        int n;
         Scanner input = new Scanner(System.in);
         System.out.print("n = ");
-        n = input.nextInt();
+        int n = input.nextInt();
         while (n <= 2)
         {
             System.out.print("n = ");
