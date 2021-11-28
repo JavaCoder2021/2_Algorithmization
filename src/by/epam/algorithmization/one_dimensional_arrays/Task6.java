@@ -3,7 +3,7 @@
  * Задана  последовательность  N  вещественных  чисел.  
  * Вычислить  сумму  чисел,  порядковые  номера  которых являются простыми числами. 
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
 
