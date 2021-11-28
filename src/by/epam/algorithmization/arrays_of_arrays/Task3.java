@@ -49,7 +49,7 @@ public class Task3 {
         //Column p
         System.out.println("Output Column p:");
         for (int i = 0; i < n; i++) {
-            for (int a = 0; a < n; a++) {
+            for (int a = 0; a < p; a++) {
                 if (p == a + 1)
                     System.out.print(myArray[i][a] + "\t");
                 else 
