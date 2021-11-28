@@ -3,7 +3,7 @@
  * Даны действительные числа а1 ,а2 ,..., аn. 
  * Поменять местами наибольший и наименьший элементы. 
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
 
