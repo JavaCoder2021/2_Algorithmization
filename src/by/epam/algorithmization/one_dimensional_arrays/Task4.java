@@ -21,33 +21,28 @@ public class Task4 {
              
         //Create an array
         System.out.println("Array:");
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             myArray[i] = (double) (Math.random() * 20) - 10;
             System.out.printf(" %.1f  ", myArray[i]);
         }
         System.out.println("");
         
         //Calculations 
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             if (i==0) {
                 maxN = 0;
                 minN = 0;
                 maxA = myArray[0];
                 minA = myArray[0];
             }
-            else
-            {
+            else {
                 //Max element
-                if (myArray[i] > maxA) 
-                {
+                if (myArray[i] > maxA) {
                     maxN = i;
                     maxA = myArray[i]; 
                 }
                 //Min element
-                if (myArray[i] < minA) 
-                {
+                if (myArray[i] < minA) {
                     minN = i;
                     minA = myArray[i]; 
                 }
@@ -59,8 +54,7 @@ public class Task4 {
         myArray[minN] = maxA;
         
         System.out.println("Final array:");
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             System.out.printf(" %.1f  ", myArray[i]);
         }
         System.out.println("");
