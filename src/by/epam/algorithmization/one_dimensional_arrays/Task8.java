@@ -3,7 +3,7 @@
  * Дана последовательность целых чисел.  
  * Образовать новую последовательность, выбросив из исходной те члены, которые равны min.
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
 import java.util.Random;
