@@ -6,7 +6,6 @@
 package by.epam.basics.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
-import java.util.Random;
 
 public class Task7 {
 
