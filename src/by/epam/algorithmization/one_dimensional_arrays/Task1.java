@@ -3,7 +3,7 @@
  * В массив A[N] занесены натуральные числа. 
  * Найти сумму тех элементов, которые кратны данному К. 
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
