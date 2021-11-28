@@ -3,7 +3,7 @@
  * В массиве целых чисел с количеством элементов n найти наиболее часто встречающееся число. 
  * Если таких чисел несколько, то определить наименьшее из них.
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
 import java.util.Random;
