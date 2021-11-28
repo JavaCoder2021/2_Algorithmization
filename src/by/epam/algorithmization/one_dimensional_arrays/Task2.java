@@ -31,8 +31,7 @@ public class Task2 {
         System.out.println();
                    
         System.out.println("Amount of elements > Z = " + summ);
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             System.out.printf(" %.1f  ", myArray[i]);            
         }
         System.out.println("");
