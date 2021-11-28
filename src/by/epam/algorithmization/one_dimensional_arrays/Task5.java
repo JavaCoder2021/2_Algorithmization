@@ -3,7 +3,7 @@
  * Даны целые числа а1 ,а2 ,..., аn . 
  * Вывести на печать только те числа, для которых аi > i.
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
 import java.util.Random;
