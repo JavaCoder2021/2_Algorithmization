@@ -3,7 +3,7 @@
  * Дан  массив  действительных  чисел,  размерность  которого  N.  
  * Подсчитать,  сколько  в  нем  отрицательных, положительных и нулевых элементов. 
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
 
