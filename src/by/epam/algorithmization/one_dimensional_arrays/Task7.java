@@ -3,7 +3,7 @@
  * Даны действительные числа a , a	2	,   , a	n	. Найти										
  * max( a + a	2n	, a	2	+ a	2n −1	,   , a	n	+ a	n +1	) .
  */
-package by.epam.basics.algorithmization.one_dimensional_arrays;
+package by.epam.algorithmization.one_dimensional_arrays;
 
 import java.util.Scanner;
 
