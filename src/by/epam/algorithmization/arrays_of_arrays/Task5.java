@@ -31,6 +31,7 @@ public class Task5 {
             }
             System.out.println();
         }
+        
     }
     
     private static int scannerInt(String str) {
