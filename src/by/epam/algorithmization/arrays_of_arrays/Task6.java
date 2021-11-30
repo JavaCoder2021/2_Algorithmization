@@ -17,9 +17,8 @@ public class Task6 {
         
         //Calculations
         for (int i = 0; i < n / 2; i++)
-            for (int j = 0; j < n / 2; j++) 
-            {
-
+            for (int j = 0; j < n / 2; j++) {
+                
                 int value = (i > j) ? 0 : 1;
                 int invI = n - i - 1;
                 int invJ = n - j - 1;
@@ -28,14 +27,13 @@ public class Task6 {
                 myArray[invI][j] = value;
                 myArray[i][invJ] = value;
                 myArray[invI][invJ] = value;
+                
             }      
           
         //Output
         System.out.println("Output:");
-        for (int i = 0; i < n; i++)
-        {
-            for (int a = 0; a < n; a++)
-            {
+        for (int i = 0; i < n; i++) {
+            for (int a = 0; a < n; a++) {
                 System.out.print(myArray[i][a] + "\t");
             }
             System.out.println();
