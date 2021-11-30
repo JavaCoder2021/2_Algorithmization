@@ -48,6 +48,7 @@ public class Task2 {
         for (int i = 0; i < n; i++)
             System.out.print(myArray[i][n - i - 1] + "\t");
         System.out.println();
+        
     }
     
     private static int scannerInt(String str) {
