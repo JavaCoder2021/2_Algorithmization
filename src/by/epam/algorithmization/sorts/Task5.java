@@ -42,8 +42,7 @@ public class Task5 {
         
     }
     
-    public static int[] insertionSort(int[] numbers) 
-    {
+    public static int[] insertionSort(int[] numbers) {
         
         for (int i = 0; i < numbers.length; i++) {
             int copyNumber = numbers[i];
