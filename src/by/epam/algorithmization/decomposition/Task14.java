@@ -47,7 +47,7 @@ public class Task14 {
         
         int count = 0;
         
-        while( number > 0) {
+        while (number > 0) {
             myArray[count++] = number % 10;
             number /= 10;
         }
