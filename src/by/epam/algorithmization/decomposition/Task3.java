@@ -11,7 +11,7 @@ public class Task3 {
     
     public static void main(String[] args) {
         
-        double a = scannerInt("a = ");
+        double a = scannerDouble("a = ");
         
         double area = 6 * triangleArea(a);     
         
@@ -25,15 +25,15 @@ public class Task3 {
         
     }
     
-    private static int scannerInt(String str) {
+    private static double scannerDouble(String str) {
         
         Scanner input = new Scanner(System.in);
-        int num = -1;
+        double num = -1;
         
         do {
             System.out.print(str);
-            if (input.hasNextInt()) {
-                num = input.nextInt();
+            if (input.hasNextDouble()) {
+                num = input.nextDouble();
             } 
             else {
                 input.next();
