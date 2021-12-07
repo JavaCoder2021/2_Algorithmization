@@ -39,7 +39,7 @@ public class Task8 {
         
     }
     
-    public static int sumElements(int[] D, int k , int m) {
+    public static int sumElements(int[] D, int k, int m) {
         
         int sum = 0;
         
