@@ -68,7 +68,6 @@ public class Task15 {
     public static String calculations(int n) {
         
         String s = "";
-        
         int i, a;
         boolean grow;
         
