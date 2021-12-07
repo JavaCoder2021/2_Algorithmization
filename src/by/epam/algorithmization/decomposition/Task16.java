@@ -70,7 +70,7 @@ public class Task16 {
         
         boolean grow = true;
         
-        for(int a = 0; a < A.length; a++)
+        for (int a = 0; a < A.length; a++)
             if (A[a] % 2 == 0)
                 grow = false;
         
@@ -102,7 +102,7 @@ public class Task16 {
         for (i = 1; i <= (int) Math.pow(10, n) - 1; i++) {
             long[] A = arrayNumber(i);
           
-            if (grow(A) == true) {
+            if (grow(A)) {
                 sum += i;
                 s += "  " + i + "  ";                    
             }
