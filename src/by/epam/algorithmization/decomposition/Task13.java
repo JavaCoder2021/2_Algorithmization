@@ -64,8 +64,8 @@ public class Task13 {
         
         String s = "";
         
-        for(int i = n; i < n * 2 - 1; i++) {
-            if(simple(i) && simple(i + 2))
+        for (int i = n; i < n * 2 - 1; i++) {
+            if (simple(i) && simple(i + 2))
                 s += "  " + i + " and " + (i + 2) + "  ";
         }   
         
