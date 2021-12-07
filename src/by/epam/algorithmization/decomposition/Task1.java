@@ -11,9 +11,7 @@ public class Task1 {
     
     public static void main(String[] args) {
         
-        //Input
-        Scanner input = new Scanner(System.in);
-        
+        //Input       
         long a = scannerInt("a = ");
         long b = scannerInt("b = ");
         
