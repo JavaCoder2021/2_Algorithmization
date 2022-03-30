@@ -6,7 +6,7 @@
  * а первый - на место наибольшего. Затем, начиная со второго, эта процедура повторяется. 
  * Написать алгоритм сортировки выбором. 
  */
-package by.epam.algorithmization.sorts;
+package by.epam.algorithmization.sort;
 
 public class Task3 {
     
