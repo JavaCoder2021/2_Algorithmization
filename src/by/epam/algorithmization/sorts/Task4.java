@@ -8,69 +8,36 @@
  */
 package by.epam.algorithmization.sorts;
 
-import java.util.Scanner;
-import java.util.Random;
-
 public class Task4 {
     
     public static void main(String[] args) {
         
-        //Input   
-        int n = scannerInt("Array size = ");
-
-        Random random = new Random();    
-        int[] myArray = new int[n];
+        int[] myArray = new int[10];
+        int tmp, i, j;
+        boolean swap;
         
-        //Create array
-        System.out.println("Array:");
-        for (int i = 0; i < n; i++) {
-            myArray[i] = random.nextInt(20);
+        for (i = 0; i < myArray.length; i++) {
+            myArray[i] = (int) (Math.random() * 10);
             System.out.print(" " + myArray[i] + " ");
-        }    
+        }
         System.out.println();
-                
-        //Calculations
-        boolean check = true;
-        int tmp;
-	int count = 0;
-        while (check) {
-            check = false;
-            for (int i = 0; i < myArray.length - 1; i++) {
-                if (myArray[i] > myArray[i + 1]) {
-                    check = true;
-                    count++;
-                    tmp = myArray[i];
-                    myArray[i] = myArray[i + 1];
-                    myArray[i + 1] = tmp;
+        
+        for (i = myArray.length - 1; i > 0; i--) {
+            swap = false;
+            for (j = 0; j < i; j++) {
+                if (myArray[j] > myArray[j + 1]) {
+                    tmp = myArray[j];
+                    myArray[j] = myArray[j + 1];
+                    myArray[j + 1] = tmp;     
+                    swap = true;
                 }
             }
+            if (!swap) break;
         }
         
-        //Output
-        System.out.println("Output array:");
-        for (int i = 0; i < myArray.length; i++)
+        for (i = 0; i < myArray.length; i++)
             System.out.print(" " + myArray[i] + " ");
-        System.out.println("\n count = " + count);
 
-    }
-    
-    private static int scannerInt(String str) {
-        
-        Scanner input = new Scanner(System.in);
-        int num = -1;
-        
-        do {
-            System.out.print(str);
-            if (input.hasNextInt()) {
-                num = input.nextInt();
-            } 
-            else {
-                input.next();
-            }
-        } while (num <= 0);
-
-        return num;
-        
     }
     
 }
