@@ -8,64 +8,35 @@
  */
 package by.epam.algorithmization.sorts;
 
-import java.util.Scanner;
-
 public class Task3 {
     
     public static void main(String[] args) {
         
-        //Input
-        int n = scannerInt("Array size = ");
-
-        int[] myArray = new int[n];
+        int[] myArray = new int[10];
+        int tmp, i, j, max;
         
-        //Create array
-        System.out.println("Array:");
-        for (int i = 0; i < n; i++) {
+        for (i = 0; i < myArray.length; i++) {
             myArray[i] = i;
             System.out.print(" " + myArray[i] + " ");
-        }    
+        }
         System.out.println();
-                
-        //Calculations
-        int max = 0;
-        int tmp = 0;
-        for (int i = 0; i < myArray.length; i++) {
-            max = i;
-            for (int j = i; j < myArray.length; j++) {
+        
+        for (i = 0; i < myArray.length - 1; i++) {
+        	max = i;
+            for (j = i + 1; j < myArray.length; j++) {
                 if (myArray[j] > myArray[max]) 
-                    max = j;
-            } 
-            tmp = myArray[i];
-            myArray[i] = myArray[max];
-	    myArray[max] = tmp;
+                	max = j;
+            }
+            if (myArray[max] > myArray[i]) {
+                tmp = myArray[i];
+                myArray[i] = myArray[max];
+                myArray[max] = tmp;     
+            }
         }
         
-        //Output
-        System.out.println("Output array:");
-        for (int i = 0; i < myArray.length; i++)
+        for (i = 0; i < myArray.length; i++)
             System.out.print(" " + myArray[i] + " ");
-        System.out.println();
 
-    }
-    
-    private static int scannerInt(String str) {
-        
-        Scanner input = new Scanner(System.in);
-        int num = -1;
-        
-        do {
-            System.out.print(str);
-            if (input.hasNextInt()) {
-                num = input.nextInt();
-            } 
-            else {
-                input.next();
-            }
-        } while (num <= 0);
-
-        return num;
-        
     }
     
 }
