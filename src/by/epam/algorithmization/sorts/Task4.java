@@ -6,12 +6,12 @@
  * Так продолжается до тех пор, пока все элементы не станут расположены в порядке возрастания. 
  * Составить алгоритм сортировки, подсчитывая при этом количества перестановок. 
  */
-package by.epam.algorithmization.sorts;
+package by.epam.algorithmization.sort;
 
 public class Task4 {
     
     public static void main(String[] args) {
-        
+    	       
         int[] myArray = new int[10];
         int tmp, i, j;
         boolean swap;
