@@ -8,73 +8,63 @@
  * Примечание. Место помещения очередного элемента в отсортированную часть производить 
  * с помощью двоичного поиска. Двоичный поиск оформить в виде отдельной функции.
  */
-package by.epam.algorithmization.sorts;
-
-import java.util.Scanner;
-import java.util.Random;
+package by.epam.algorithmization.sort;
 
 public class Task5 {
-    
-    public static void main(String[] args) {
-        
-        //Input       
-        int n = scannerInt("Array size = ");
+	
+	public static void main(String[] args) throws Exception {
+		
+		int[] myArray = new int[10];
+		int index, tmp, i, j;
 
-        Random random = new Random();
-        int[] myArray = new int[n];
-        
-        //Create array
-        System.out.println("Array:");
-        for (int i = 0; i < n; i++) {
-            myArray[i] = random.nextInt(20);
-            System.out.print(" " + myArray[i] + " ");
-        }    
-        System.out.println();
-                
-        //Calculations
-        insertionSort(myArray);
-        
-        //Output
-        System.out.println("Output array:");
-        for (int i = 0; i < myArray.length; i++)
-            System.out.print(" " + myArray[i] + " ");
-        System.out.println();
-        
-    }
-    
-    public static int[] insertionSort(int[] numbers) {
-        
-        for (int i = 0; i < numbers.length; i++) {
-            int copyNumber = numbers[i];
-            int j = i;
-            while (j > 0 && copyNumber < numbers[j-1]) {
-                numbers[j] = numbers[j-1];
-                j--;
-            }
-            numbers[j] = copyNumber;
-        }
-        
-        return numbers;
-        
-    }
-    
-    private static int scannerInt(String str) {
-        
-        Scanner input = new Scanner(System.in);
-        int num = -1;
-        
-        do {
-            System.out.print(str);
-            if (input.hasNextInt()) {
-                num = input.nextInt();
-            } 
-            else {
-                input.next();
-            }
-        } while (num <= 0);
+		for (i = 0; i < myArray.length; i++) {
+			myArray[i] = (int) (Math.random() * 10);
+			System.out.print(" " + myArray[i] + " ");
+		}
+		System.out.println();
 
-        return num;
-        
-    }
-    
+		for (i = 1; i < myArray.length; i++) {
+			
+			index = binarySearch(0, i - 1, myArray, myArray[i]);
+			
+			if (index != i) {
+				
+				tmp = myArray[i];
+				
+				for (j = i - 1; j >= index; j--)
+					myArray[j + 1] = myArray[j];
+					
+				myArray[index] = tmp;
+				
+			}
+			
+		}
+		
+		for (i = 0; i < myArray.length; i++)
+			System.out.print(" " + myArray[i] + " ");
+				
+	}	
+	
+	public static int binarySearch(int from, int to, int array[], int elementToSearch) {
+
+	    while (from <= to) {
+	    	
+	        int middleIndex = (from + to) / 2;
+
+	        if (array[middleIndex] == elementToSearch) {
+	            return middleIndex;
+	        }
+
+	        else if (array[middleIndex] < elementToSearch)
+	        	from = middleIndex + 1;
+
+	        else if (array[middleIndex] > elementToSearch)
+	        	to = middleIndex - 1;
+
+	    }
+	    
+	    return to + 1;
+	    
+	}
+
 }
